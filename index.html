@@ -183,6 +183,9 @@
         </div>
       </a>
     </div>
+    <div id="page-top">
+      <a href="#"></a>
+    </div>
   </main>
   <footer class="content-width">
     <a href="#">プライバシーポリシー</a>
@@ -234,6 +237,16 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(function() {
+      $('#page-top').click(function() {
+        var position = 0;
+        var speed = 500;
+        $('body,html').animate({ scrollTop:position }, speed, 'swing');
+       return false;
+      });
+    });
+  </script>
 </body>
 
 </html>
